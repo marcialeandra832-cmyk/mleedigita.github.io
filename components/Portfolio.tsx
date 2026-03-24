@@ -18,7 +18,7 @@ const Portfolio: React.FC = () => {
   }, [selectedItem]);
 
   // Fix: Explicitly type categories as string[] to resolve 'unknown' type errors in the UI mapping
-  const categories: string[] = ['Todos', ...Array.from(new Set(PORTFOLIO.map(item => item.category)))];
+  const categories: string[] = ['Todos', ...Array.from<string>(new Set(PORTFOLIO.map(item => item.category)))];
 
   const filteredItems = filter === 'Todos' 
     ? PORTFOLIO 

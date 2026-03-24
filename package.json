@@ -1,12 +1,13 @@
 {
-  "name": "mlee-digital---materiais-digitais-criados-e-entregues-pronto-pra-uso",
+  "name": "mlee-digital---artes-para-seu-negócio-de-beleza",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^19.2.3",
